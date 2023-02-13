@@ -65,3 +65,17 @@ console.log("---------------------------------------")
 console.log("---------------------------------------")
 console.log("Question 3 : Héritage")
 console.log("---------------------------------------")
+
+function Personne(nom, age) {
+    this.nom = nom;
+    this.age = age
+}
+
+function Pilote(nom, age, nbTitres) {
+    Personne.call(this, nom, age);
+    this.nbTitres = nbTitres
+}
+
+let pilote = new Pilote ('Max',26,2);
+
+console.log(pilote);
