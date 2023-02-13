@@ -47,7 +47,7 @@ function execute(callback) {
     }
 }
 
-execute(sayHello);
+execute(sayHello());
 execute("blabla");
 execute(5);
 
@@ -62,4 +62,10 @@ console.log(x);
 
 ////////////// Question 4 //////////////////////
 console.log("---------------------------------------")
-console.log("Question 4 : Fonction asynchrone")
+console.log("Question 4 : Fonction asynchrone");
+
+function asyncSayHello() {
+    setTimeout(sayHello, 5000);
+}
+
+asyncSayHello();
