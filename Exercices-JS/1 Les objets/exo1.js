@@ -1,0 +1,47 @@
+let driverLicense = {
+    class: 'S',
+    expiration: '12-14-03',
+    id: 'A1356021',
+    name: { first: 'Spongebob', last: 'Squarepants' },
+    address: {
+        street: '124 Conch street',
+        city: 'Bikini Bottom',
+        country: 'Hawai',
+    },
+    sex: 'M',
+    hair: 'yellow',
+    eyes: 'blue',
+    height: '0-04',
+    weight: '1 oz',
+    birthdate: '07-14-86',
+    validity: false,
+    describe: function () {
+        return str = this.name.first + " " + this.name.last + " " + this.birthdate;
+    }
+};
+
+////////////// Question 1 //////////////////////
+
+console.log("---------------------------------------")
+console.log("---------------------------------------")
+console.log("Question 1 : Premier objet")
+console.log("---------------------------------------")
+
+console.log("Conducteur : " + driverLicense.name.first + " " + driverLicense.name.last);
+
+console.log("Validity : " + driverLicense.validity);
+driverLicense.validity = true;
+console.log("Validity : " + driverLicense.validity);
+
+console.log(driverLicense.describe());
+
+delete driverLicense.expiration;
+console.log(driverLicense.expiration);
+
+////////////// Question 2 //////////////////////
+
+console.log("---------------------------------------")
+console.log("---------------------------------------")
+console.log("Question 2 : Objet depuis une fonction")
+console.log("---------------------------------------")
+
