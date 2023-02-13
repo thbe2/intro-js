@@ -45,3 +45,23 @@ console.log("---------------------------------------")
 console.log("Question 2 : Objet depuis une fonction")
 console.log("---------------------------------------")
 
+function DriverLicense() {
+    this.class = 'S';
+    this.expiration = '12-14-03';
+    this.id = 'A1356021';
+    this.name = {
+        first: 'Spongebob',
+        last: 'Squarepants',
+    }
+}
+
+let functionDriverLicense = new DriverLicense();
+
+console.log(functionDriverLicense);
+
+////////////// Question 3 //////////////////////
+
+console.log("---------------------------------------")
+console.log("---------------------------------------")
+console.log("Question 3 : Héritage")
+console.log("---------------------------------------")
